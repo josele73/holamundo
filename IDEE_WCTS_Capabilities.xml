@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wps:Capabilities service="WPS" version="1.0.0" xml:lang="es" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 http://schemas.opengis.net/wps/1.0.0/wpsGetCapabilities_response.xsd">
+  
+  <ows:ServiceIdentification>
+    
+    <ows:Title>Servicio de transformación de coordenadas</ows:Title>
+    
+    <ows:Abstract>Servicio de transformación de coordenadas conforme al estándar Web Processing Service versión 1.0. El servicio permite realizar transformación de coordenadas de un punto o un conjunto de datos en formato GML de un Sistema de Referencia a otro. Este servicio soporta los datum ETRS89 y ED50, en coordenadas geográficas y en coordenadas UTM. El acceso o conexión a este servicio para obtener las funcionalidades para las que está pensado es gratuito en cualquier caso, siempre que se mencione la autoría del IGN como propietario del servicio del siguiente modo: «Servicio de transformación de coordenadas cedido por © Instituto Geográfico Nacional de España»</ows:Abstract>
+    
+    <ows:ServiceType>WPS</ows:ServiceType>
+	
+    <ows:Keywords>
+	
+      <ows:Keyword>WPS</ows:Keyword>
+	
+      <ows:Keyword>transformación de coordenadas</ows:Keyword>
+	
+      <ows:Keyword>geoprocesamiento</ows:Keyword>
+	
+      <Keyword>Spain</Keyword>
+	
+      <Keyword>España</Keyword>
+	
+      <Keyword>IGN</Keyword>
+	
+      <Keyword vocabulary="ISO 19119 geographic services taxonomy, version 2.3">spatialCoordinateTransformationService</Keyword>
+	
+      <Keyword vocabulary="ISO 19119 geographic services taxonomy, version 2.3">spatialProcessingService</Keyword>
+	
+      <Keyword>Transform</Keyword>
+	
+      <Keyword>WPS 1.0</Keyword>
+	
+      <Keyword>OGC</Keyword>
+	
+    </ows:Keywords>
+    
+    <ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
+	
+    <Fees>no conditions apply</Fees>
+	
+    <AccessConstraints>OtherConstraints. Se permite el acceso a este servicio en cualquier caso siempre que se mencione la autoría del IGN como propietario del servicio y de su contenido del siguiente modo: «Servicio de Transformación de coordenadas cedido por © Instituto Geográfico Nacional de España»</AccessConstraints>
+  
+  </ows:ServiceIdentification>
+  
+  <ows:ServiceProvider>
+    
+    <ows:ProviderName>Instituto Geográfico Nacional</ows:ProviderName>
+    
+    <ows:ProviderSite xlink:href="http://www.ign.es"></ows:ProviderSite>
+    
+    <ows:ServiceContact>
+      
+      <ows:ContactInfo>
+        
+        <ows:Phone>
+          
+          <ows:Voice>+34 91 597 96 46</ows:Voice>
+          
+          <ows:Facsimile>+34 91 597 97 64</ows:Facsimile>
+        
+        </ows:Phone>
+        
+        <ows:Address>
+          
+          <ows:DeliveryPoint>General Ibáñez de Ibero, 3</ows:DeliveryPoint>
+          
+          <ows:City>Madrid</ows:City>
+          
+          <ows:AdministrativeArea>Madrid</ows:AdministrativeArea>
+          
+          <ows:PostalCode>28500</ows:PostalCode>
+          
+          <ows:Country>España</ows:Country>
+          
+          <ows:ElectronicMailAddress>ign@fomento.es</ows:ElectronicMailAddress>
+        
+        </ows:Address>
+      
+      </ows:ContactInfo>
+      
+      <ows:Role>PointOfContact</ows:Role>
+    
+    </ows:ServiceContact>
+  
+  </ows:ServiceProvider>
+  
+  <ows:OperationsMetadata>
+    
+    <ows:Operation name="GetCapabilities">
+      
+      <ows:DCP>
+        
+        <ows:HTTP>
+          
+          <ows:Get xlink:href="http://www.ign.es/wps-transformacion/servicios?"></ows:Get>
+          
+          <ows:Post xlink:href="http://www.ign.es/wps-transformacion/servicios"></ows:Post>
+        
+        </ows:HTTP>
+      
+      </ows:DCP>
+    
+    </ows:Operation>
+    
+    <ows:Operation name="DescribeProcess">
+      
+      <ows:DCP>
+        
+        <ows:HTTP>
+          
+          <ows:Get xlink:href="http://www.ign.es/wps-transformacion/servicios?"></ows:Get>
+          
+          <ows:Post xlink:href="http://www.ign.es/wps-transformacion/servicios"></ows:Post>
+        
+        </ows:HTTP>
+      
+      </ows:DCP>
+    
+    </ows:Operation>
+    
+    <ows:Operation name="Execute">
+      
+      <ows:DCP>
+        
+        <ows:HTTP>
+          
+          <ows:Get xlink:href="http://www.ign.es/wps-transformacion/servicios?"></ows:Get>
+          
+          <ows:Post xlink:href="http://www.ign.es/wps-transformacion/servicios"></ows:Post>
+        
+        </ows:HTTP>
+      
+      </ows:DCP>
+    
+    </ows:Operation>
+  
+  </ows:OperationsMetadata>
+  
+  <wps:ProcessOfferings>
+    
+    <wps:Process wps:processVersion="1.0.0">
+      
+      <ows:Identifier>TransformCoordinates</ows:Identifier>
+      
+      <ows:Title>Proceso para transformar una geometía GML de un sistema de referencia a otro</ows:Title>
+      
+      <ows:Abstract>El propósito de este proceso es transformar geometrías o coberturas de un sistema de coordenadas en otro. Las versiones del estándar GML que soporta son 2.1.1, 3.0.1, 3.1.1 o 3.2.1. Se basa en el borrador de la guía técnica para los servicios de transformación de coordenadas Inspire, versión 2.0 de 09/07/2009.
+      Para la transformación entre los Datums ED50 y ETRS89 se utiliza la rejilla avalada por el Grupo de Trabajo para la transición a ETRS89 compuesto por todas las Comunidades Autónomas y los Ministerios de Fomento (IGN) y Defensa, que se encuentra disponible para su descarga en www.ign.es. Consta de dos rejillas, una para la península (PENR2009.gsb, anteriormente llamada R2009v9.gsb siendo idéntica a ésta) y otra para Baleares denominada BALR2009.gsb. Ambas rejillas están en formato NTV2 y contienen los incrementos en longitud y latitud entre estos dos datums. Esta transformación no destruye topología alguna, es eficiente y contínua con una grado de acuerdo de solo algunos centímetros sobre todo el territorio. </ows:Abstract>
+      
+      <wps:Profile>urn:ogc:wps:1.0.0:BKG:Transform­Coordinates:1.0</wps:Profile>
+    
+    </wps:Process>
+  
+  </wps:ProcessOfferings>
+  
+  <wps:Languages>
+    
+    <wps:Default>
+      
+      <ows:Language>spa</ows:Language>
+    
+    </wps:Default>
+    
+    <wps:Supported>
+      
+      <ows:Language>spa</ows:Language>
+    
+    </wps:Supported>
+  
+  </wps:Languages>
+  
+  <wps:WSDL xlink:href="http://www.ign.es/wps-transformacion/servicios?service=WPS&amp;version=1.0.0&amp;request=GetWPSWSDL"></wps:WSDL>
+
+</wps:Capabilities>
