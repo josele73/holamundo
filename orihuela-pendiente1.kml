@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:ns2="http://www.google.com/kml/ext/2.2" xmlns:ns3="http://www.w3.org/2005/Atom" xmlns:ns4="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <LookAt>
+            <longitude>-0.868835185685441</longitude>
+            <latitude>38.0977299373034</latitude>
+            <altitude>68642.21609921106</altitude>
+            <heading>0.0</heading>
+            <tilt>0.0</tilt>
+            <range>55466.51100705096</range>
+            <altitudeMode>clampToGround</altitudeMode>
+        </LookAt>
+        <NetworkLink>
+            <name>pendiente1</name>
+            <visibility>1</visibility>
+            <open>1</open>
+            <description>pendiente prueba</description>
+            <LookAt>
+                <longitude>-0.8689652032531541</longitude>
+                <latitude>38.09779717550052</latitude>
+                <altitude>74767.30819247839</altitude>
+                <heading>0.0</heading>
+                <tilt>0.0</tilt>
+                <range>60415.906689722084</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
+            <Url>
+                <href>http://localhost:8080/geoserver/orihuela/wms?service=wms&amp;request=GetMap&amp;version=1.1.1&amp;format=application/vnd.google-earth.kml+xml&amp;layers=orihuela:pendiente1&amp;styles=point&amp;height=2048&amp;width=2048&amp;transparent=false&amp;srs=EPSG:4326&amp;format_options=AUTOFIT:true;KMATTR:true;KMPLACEMARK:false;KMSCORE:40;MODE:refresh;SUPEROVERLAY:false</href>
+                <refreshInterval>0.0</refreshInterval>
+                <viewRefreshMode>onStop</viewRefreshMode>
+                <viewRefreshTime>1.0</viewRefreshTime>
+                <viewBoundScale>1.0</viewBoundScale>
+            </Url>
+        </NetworkLink>
+    </Document>
+</kml>
