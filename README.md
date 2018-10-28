@@ -1,14 +1,19 @@
-### holamundo
-esto es una prueba
-> vamos a intentar hacer una prueba 
-``` Otra prueba
-otra
-otra 
-otra 
-```
+# Welcome to the holamundo wiki!
+## Welcome to the holamundo wiki!
+### Welcome to the holamundo wiki!
+**Welcome to the holamundo wiki!**
+***
 
-- 1
-- 2
-- 3 
+_Welcome to the holamundo wiki!_
+***
 
-# ¿Como se pone en negrita y mas grande?
+`Welcome to the holamundo wiki!`
+***
+![ibex35](http://www.fxprivilege.com/wp-content/uploads/2017/03/IBEX35-PORTADA.jpeg)
+
+`1. Welcome to the holamundo wiki!`
+`1. Welcome to the holamundo wiki!`
+***
+
+
+***
