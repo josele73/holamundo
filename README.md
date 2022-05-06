@@ -11,8 +11,9 @@ _Welcome to the holamundo wiki!_
 ***
 ![ibex35](http://www.fxprivilege.com/wp-content/uploads/2017/03/IBEX35-PORTADA.jpeg)
 
+
 `1. Welcome to the holamundo wiki!`
-`1. Welcome to the holamundo wiki!`
+
 ***
 
 
